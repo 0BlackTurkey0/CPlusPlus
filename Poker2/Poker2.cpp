@@ -133,17 +133,17 @@ int main(){
         bool re = false;
         while(!re){
             int num;
-            cout << "½Ğ¿é¤J­n©â¨úªº¼³§JµP­Ó¼Æ¡A©|¦³" << remain << "±i¼³§JµP(¿é¤J0¥i´£¨ú·sªº¤@°Æ¼³§JµP):";
+            cout << "è«‹è¼¸å…¥è¦æŠ½å–çš„æ’²å…‹ç‰Œå€‹æ•¸ï¼Œå°šæœ‰" << remain << "å¼µæ’²å…‹ç‰Œ(è¼¸å…¥0å¯æå–æ–°çš„ä¸€å‰¯æ’²å…‹ç‰Œ):";
             cin >> num;
             while(num > remain || num < 0 || !cin){
                 cin.clear();
                 cin.sync();
-                cout << "¿ù»~ªº¿é¤J!" << endl << "½Ğ¿é¤J­n©â¨úªº¼³§JµP­Ó¼Æ¡A©|¦³" << remain << "±i¼³§JµP(¿é¤J0¥i´£¨ú·sªº¤@°Æ¼³§JµP):";
+                cout << "éŒ¯èª¤çš„è¼¸å…¥!" << endl << "è«‹è¼¸å…¥è¦æŠ½å–çš„æ’²å…‹ç‰Œå€‹æ•¸ï¼Œå°šæœ‰" << remain << "å¼µæ’²å…‹ç‰Œ(è¼¸å…¥0å¯æå–æ–°çš„ä¸€å‰¯æ’²å…‹ç‰Œ):";
                 cin >> num;
             }
             if(!num){
                 re = true;
-                cout << "¤w¥Í¦¨¤@°Æ·sªº¼³§JµP!" << endl;
+                cout << "å·²ç”Ÿæˆä¸€å‰¯æ–°çš„æ’²å…‹ç‰Œ!" << endl;
             }
             else{
                 int pos = GetPosition(GetStdHandle(STD_OUTPUT_HANDLE)).Y;
