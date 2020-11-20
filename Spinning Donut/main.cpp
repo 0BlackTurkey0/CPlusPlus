@@ -27,8 +27,8 @@ int main(){
     while(true){
         float CosX = cos(XAngle), SinX = sin(XAngle);
         float CosZ = cos(ZAngle), SinZ = sin(ZAngle);
-        memset(Depth,0,7040);
-        memset(Donut,32,1760);
+        memset(Depth,0,8000);
+        memset(Donut,32,2000);
         for(float RAngle = 0;RAngle < 2*pi;RAngle += pi/180){
             float CosR = cos(RAngle), SinR = sin(RAngle);
             float Xc = R*CosR, Yc = 0, Zc = R*SinR; //initialize center of r (Non-Rotated)
