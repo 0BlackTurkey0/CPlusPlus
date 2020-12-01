@@ -51,7 +51,7 @@ int main(){
         }
         Reset();
         for(int k = 0; k <= 2000; k++)
-            std::cout << (k%80?Donut[k]:'\n');
+            putchar(k%80?Donut[k]:'\n'); //or use _putchar_nolock() in Windows 、 putchar_unlocked() in POSIX
         XAngle += pi/47;
         ZAngle += pi/91;
         Sleep(10);
