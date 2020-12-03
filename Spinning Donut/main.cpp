@@ -1,6 +1,6 @@
 #include <iostream>
+#include <cmath>
 #include <windows.h>
-#include <math.h>
 
 #define pi acos(-1)
 
