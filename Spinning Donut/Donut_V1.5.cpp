@@ -37,9 +37,8 @@ int main(){
     while(!Gameover){
         InitData();
 
-        Position(80,0);
-        std::cout << "Score:" << Score;
         ObjectPrint();
+
         if(cx==Rx && cy==Ry)
 			Gameover = true;
         else{
@@ -91,9 +90,13 @@ void InitData(){
     Rx = Tx+0.5;
     Ry = Ty+0.5;
     if(TimeCnt<1200){
-        spd += pi/8640000;
+        spd += pi/864000;
         TimeCnt++;
     }
+    Position(80,0);
+    std::cout << "Score:" << Score;
+    Position(92,0);
+    std::cout << "SpeedRate:" << spd/pi*360;
 }
 
 void ColorPrint(const char *str, DWORD clr){
