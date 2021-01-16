@@ -124,7 +124,7 @@ void DonutCalc(){
             float X = X_rr*100/(210-Z_rr)+20, Y = Y_rr*100/(210-Z_rr)-12, Z = Z_rr+20;
             int Loc = (int)(X*2+0.5) + (int)(-Y+0.5)*80; //2*width = height(character) and Rounding
             int Light = (int)(7.5*(Y_rr-Y_c)/r+4); //light level -4~11 and Rounding
-            if(-Y >= 0 && -Y < 25 && X >= 0 && X < 40 && Z > Depth[Loc]){
+            if(X >= 0 && X < 40 && -Y >= 0 && -Y < 25 && Z > Depth[Loc]){
                 Depth[Loc] = Z;
                 Donut[Loc] = ".:;!oxOX%#$@"[Light>0?Light:0];
             }
