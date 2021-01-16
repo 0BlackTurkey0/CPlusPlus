@@ -40,7 +40,7 @@ int main(){
         ScreenUpdate();
 
         if(cx==Rx && cy==Ry)
-			Gameover = true;
+	    Gameover = true;
         else{
             CharacterControl();
 
